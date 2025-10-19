@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | Your Travel Agency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html"><h1>Travel Agency Name</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2>A Glimpse of the World</h2>
+        <p style="text-align: center;">Click on any image to view it full screen.</p>
+
+        <div class="gallery-grid">
+
+            <a href="#" class="gallery-item gallery-item-js" 
+               data-large-src="images/large-china.jpg" 
+               data-caption="Dubai.">
+                <img src="images/dubai.jpg" alt="Dubai skyline with Burj Khalifa">
+                <p>Dubai, city of Skyscrapers</p>
+            </a>
+            
+            <a href="#" class="gallery-item gallery-item-js" 
+               data-large-src="images/large-costarica.jpg" 
+               data-caption="Bali">
+                <img src="images/bali.jpg" alt="A jungle hike path in Bali">
+                <p>Bali Beaches</p>
+            </a>
+            
+            <a href="#" class="gallery-item gallery-item-js" 
+               data-large-src="images/large-marrakech.jpg" 
+               data-caption="Paris, France">
+                <img src="images/paris.jpg" alt="A bustling market street in Paris">
+                <p>Paris the city of Love</p>
+            </a>
+            
+        </div>
+    </section>
+
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-image" src="" alt="">
+        <div id="modal-caption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Travel Agency. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
